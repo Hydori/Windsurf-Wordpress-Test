@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Template principal — fallback pour toutes les vues
  *
@@ -8,25 +9,27 @@
 get_header();
 ?>
 
-    <main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-        <?php if ( have_posts() ) : ?>
+    HELLO WORLD
 
-            <?php while ( have_posts() ) : the_post(); ?>
-                <?php get_template_part( 'template-parts/content', get_post_type() ); ?>
-            <?php endwhile; ?>
+    <?php if (have_posts()) : ?>
 
-            <?php the_posts_navigation(); ?>
+        <?php while (have_posts()) : the_post(); ?>
+            <?php get_template_part('template-parts/content', get_post_type()); ?>
+        <?php endwhile; ?>
 
-        <?php else : ?>
+        <?php the_posts_navigation(); ?>
 
-            <?php get_template_part( 'template-parts/content', 'none' ); ?>
+    <?php else : ?>
 
-        <?php endif; ?>
+        <?php get_template_part('template-parts/content', 'none'); ?>
 
-    </main>
+    <?php endif; ?>
 
-    <?php get_sidebar(); ?>
+</main>
+
+<?php get_sidebar(); ?>
 
 <?php
 get_footer();
