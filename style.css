@@ -1,0 +1,20 @@
+/*
+Theme Name: Mon Thème
+Theme URI: https://github.com/
+Author: William
+Author URI: https://github.com/
+Description: Thème WordPress vierge avec Tailwind CSS, prêt à être complété.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: mon-theme
+Tags: custom-theme, tailwind
+*/
+
+/*
+ * Ce fichier est requis par WordPress pour reconnaître le thème.
+ * Les styles sont gérés via Tailwind CSS — voir assets/css/
+ */
